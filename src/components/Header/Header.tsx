@@ -1,13 +1,15 @@
 import Link from 'next/link';
-const Header: React.VFC = () => {
+import React, { VFC } from 'react';
+const Header: VFC = () => {
   return (
-    <header className=''>
+    <header>
       <nav>
         <Link href='/'>
-          {' '}
-          <a>Sansai's blog</a>{' '}
+          <a>Sansai's blog</a>
         </Link>
       </nav>
     </header>
   );
 };
+
+export default Header;
