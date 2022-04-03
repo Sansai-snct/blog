@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 
 interface LayoutInterface {
@@ -15,6 +16,7 @@ const Layout: React.FC<LayoutInterface> = ({ children, pageTitle }) => {
       <div>
         <Header />
         <div>{children}</div>
+        <Footer />
       </div>
     </div>
   );
