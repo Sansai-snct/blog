@@ -17,9 +17,14 @@
     "printWidth": 100
   },
   "dependencies": {
+    "@types/react-syntax-highlighter": "^13.5.2",
+    "gray-matter": "^4.0.3",
     "next": "12.1.4",
+    "raw-loader": "^4.0.2",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-markdown": "^8.0.2",
+    "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
     "@types/node": "17.0.23",
