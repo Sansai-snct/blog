@@ -1,10 +1,34 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import type { InferGetStaticPropsType, NextPage } from 'next';
+import Layout from '../components/Layout/Layout';
+import { getAllPosts } from '../lib/api';
 
-const Home: NextPage = () => {
-  return <div>Hello world</div>;
+type Props = InferGetStaticPropsType<typeof getStaticProps>;
+
+export const getStaticProps = async () => {
+  const allPosts = getAllPosts(['slug', 'title', 'date']);
+  return {
+    props: { allPosts },
+  };
+};
+
+const Home: NextPage<Props> = ({ allPosts }) => {
+  return (
+    <div>
+      <Layout pageTitle='blog|TOP'>
+        <div>記事一覧</div>
+        <ul>
+          <li>
+            {allPosts.map((post) => (
+              <a href={post.slug} key={post.slug}>
+                {post.title}
+                {post.date}
+              </a>
+            ))}
+          </li>
+        </ul>
+      </Layout>
+    </div>
+  );
 };
 
 export default Home;
