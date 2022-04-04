@@ -3,9 +3,9 @@ import React, { VFC } from 'react';
 const Header: VFC = () => {
   return (
     <header>
-      <nav>
+      <nav className=' text-center '>
         <Link href='/'>
-          <a>Sansai's blog</a>
+          <a className='text-4xl md:text-6xl  font-noto'>Sansai's blog</a>
         </Link>
       </nav>
     </header>
