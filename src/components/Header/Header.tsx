@@ -8,19 +8,19 @@ const Header: VFC = () => {
   return (
     <section>
       <div>
-        <h1 className='text-4xl text-center'>
+        <h1 className='text-4xl md:text-6xl text-center'>
           <Link href='/'>
             <a>Sansai's blog</a>
           </Link>
         </h1>
 
-        <ul className='flex justify-end text-4xl'>
-          <li className='mr-4'>
+        <ul className='flex justify-end text-xl md:text-4xl'>
+          <li className='mr-2 md:mr-4'>
             <button>
               <FaMoon />
             </button>
           </li>
-          <li className='mr-4'>
+          <li className='mr-2 md:mr-4'>
             <a target='_blank' href='https://github.com/Sansai-snct' rel='noopener noreferrer'>
               <FaGithub />
             </a>
