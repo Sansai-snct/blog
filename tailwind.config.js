@@ -1,8 +1,12 @@
 module.exports = {
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false,
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        noto: ['Noto Sans JP'],
+      },
+    },
   },
   variants: {
     extend: {},
