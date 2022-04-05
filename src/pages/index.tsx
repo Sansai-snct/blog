@@ -15,7 +15,7 @@ const Home: NextPage<Props> = ({ allPosts }) => {
   return (
     <div>
       <Layout pageTitle='blog|TOP'>
-        <div>記事一覧</div>
+        <div className='text-2xl text-center'>記事一覧</div>
         <ul>
           <li>
             {allPosts.map((post) => (
