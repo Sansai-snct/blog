@@ -15,7 +15,7 @@ const Home: NextPage<Props> = ({ allPosts }) => {
   return (
     <div>
       <Layout pageTitle='blog|TOP'>
-        <div className='text-2xl text-center'>記事一覧</div>
+        <div className='text-2xl text-center dark:text-white'>記事一覧</div>
         <ul className='grid justify-center grid-rows-2 md:grid-cols-2 md:gap-4 md:ml-36 md:mr-36 lg:ml-72 lg:mr-72 mt-10'>
           {allPosts.map((post) => (
             <li className='p-6  h-48  mb-4 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700'>
