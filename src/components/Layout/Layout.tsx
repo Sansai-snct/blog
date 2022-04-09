@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutInterface> = ({ children, pageTitle }) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <title>{pageTitle}</title>
       </Head>
-      <div className='flex flex-col min-h-screen'>
+      <div className='flex flex-col min-h-screen bg-white dark:bg-gray-700'>
         <Header />
         <div>{children}</div>
 
