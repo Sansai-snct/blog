@@ -2,7 +2,6 @@ import { NextPage, InferGetStaticPropsType } from 'next';
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import { getAllPosts, getPostBySlug } from '../lib/api';
-import Reactmarkdown from 'react-markdown';
 import Layout from '../components/Layout/Layout';
 import ReactMarkdown from 'react-markdown';
 
@@ -45,7 +44,9 @@ const Post: NextPage<Props> = ({ post }) => {
   return (
     <div>
       <Layout pageTitle={post.title}>
-        <ReactMarkdown>{post.content}</ReactMarkdown>
+        <div className='markdown '>
+          <ReactMarkdown>{post.content}</ReactMarkdown>
+        </div>
       </Layout>
     </div>
   );
