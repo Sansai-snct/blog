@@ -18,11 +18,13 @@ const Header: VFC = () => {
 
         <ul className='flex justify-end text-xl md:text-4xl'>
           <li className='mr-2 md:mr-4'>
-            <button onClick={() => toggle()}>{isDarkMode ? <FaSun /> : <FaMoon />}</button>
+            <button onClick={() => toggle()}>
+              {isDarkMode ? <FaSun className='dark:text-white' /> : <FaMoon />}
+            </button>
           </li>
           <li className='mr-2 md:mr-4'>
             <a target='_blank' href='https://github.com/Sansai-snct' rel='noopener noreferrer'>
-              <FaGithub />
+              <FaGithub className='dark:text-white ' />
             </a>
           </li>
         </ul>
