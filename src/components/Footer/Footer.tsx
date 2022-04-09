@@ -1,6 +1,12 @@
 import React, { VFC } from 'react';
 const Footer: VFC = () => {
-  return <footer className='bg-gray-500 text-center font-12 h-10 text-white'>コピーライト</footer>;
+  return (
+    <footer className='flex-grow'>
+      <p className='p-2 text-center text-xs bottom-0'>
+        Copyright © 2022 Shunta Yamagiwa All Rights Reserved.
+      </p>
+    </footer>
+  );
 };
 
 export default Footer;
