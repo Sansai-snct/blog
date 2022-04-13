@@ -6,6 +6,9 @@
 
 /* Markdown Styles */
 /* Global */
+.main {
+  @apply dark:bg-black;
+}
 .markdown {
   @apply leading-relaxed text-sm;
 }
