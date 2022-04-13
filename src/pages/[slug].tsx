@@ -44,8 +44,12 @@ const Post: NextPage<Props> = ({ post }) => {
   return (
     <div>
       <Layout pageTitle={post.title}>
-        <div className='markdown '>
-          <ReactMarkdown>{post.content}</ReactMarkdown>
+        <div className='grid grid-cols-9'>
+          <div className='col-span-2' />
+          <div className='markdown col-span-5 m-10'>
+            <ReactMarkdown>{post.content}</ReactMarkdown>
+          </div>
+          <div className='col-span-2' />
         </div>
       </Layout>
     </div>
