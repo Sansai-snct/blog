@@ -4,6 +4,8 @@ import ErrorPage from 'next/error';
 import { getAllPosts, getPostBySlug } from '../lib/api';
 import Layout from '../components/Layout/Layout';
 import ReactMarkdown from 'react-markdown';
+import 'github-markdown-css';
+import gfm from 'remark-gfm';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -46,8 +48,8 @@ const Post: NextPage<Props> = ({ post }) => {
       <Layout pageTitle={post.title}>
         <div className='grid grid-cols-9'>
           <div className='col-span-2' />
-          <div className='markdown col-span-5 m-10'>
-            <ReactMarkdown>{post.content}</ReactMarkdown>
+          <div className='markdown-body col-span-5 m-10'>
+            <ReactMarkdown remarkPlugins={[gfm]}>{post.content}</ReactMarkdown>
           </div>
           <div className='col-span-2' />
         </div>
