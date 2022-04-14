@@ -19,10 +19,10 @@ const Home: NextPage<Props> = ({ allPosts }) => {
         <ul className='grid justify-center grid-rows-2 md:grid-cols-2 md:gap-4 md:ml-36 md:mr-36 lg:ml-72 lg:mr-72 mt-10'>
           {allPosts.map((post) => (
             <li className='p-6  h-48 bg-white mb-4 md:mb-0 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700'>
-              <h5 className='mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white'>
+              <h5 className='mt-4 text-xl text-center font-bold tracking-tight text-gray-900 dark:text-white'>
                 {post.title}
               </h5>
-              <p className='mb-3 font-normal text-center  text-gray-700 dark:text-gray-400'>
+              <p className='mt-2 font-normal text-center  text-gray-700 dark:text-gray-400'>
                 {post.date}
               </p>
               <div className='block text-center '>
