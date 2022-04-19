@@ -18,7 +18,7 @@ const Header: VFC = () => {
 
         <ul className='flex  justify-end text-2xl md:text-4xl'>
           <li className='mr-2 md:mr-4'>
-            <button onClick={() => toggle()}>
+            <button onClick={() => toggle(undefined!)}>
               {isDarkMode ? <FaSun className='dark:text-white' /> : <FaMoon />}
             </button>
           </li>
