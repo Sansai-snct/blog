@@ -48,7 +48,7 @@ const Post: NextPage<Props> = ({ post }) => {
       <Layout pageTitle={post.title}>
         <div className='grid grid-cols-9'>
           <div className='col-span-2' />
-          <div className='markdown-body col-span-5 m-10  dark:bg-gray-700 dark:text-white'>
+          <div className='markdown-body col-span-10 md:col-span-5 m-10  dark:bg-gray-700 dark:text-white'>
             <ReactMarkdown remarkPlugins={[gfm]}>{post.content}</ReactMarkdown>
           </div>
           <div className='col-span-2' />
