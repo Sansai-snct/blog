@@ -15,19 +15,6 @@ const Header: VFC = () => {
             <a>Sansai's blog</a>
           </Link>
         </h1>
-
-        <ul className='flex  justify-end text-2xl md:text-4xl'>
-          <li className='mr-2 md:mr-4'>
-            <button onClick={() => toggle(undefined!)}>
-              {isDarkMode ? <FaSun className='dark:text-white' /> : <FaMoon />}
-            </button>
-          </li>
-          <li className='mr-2 md:mr-4'>
-            <a target='_blank' href='https://github.com/Sansai-snct' rel='noopener noreferrer'>
-              <FaGithub className='dark:text-white ' />
-            </a>
-          </li>
-        </ul>
       </div>
     </section>
   );
