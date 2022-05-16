@@ -2,9 +2,6 @@ import Link from 'next/link';
 import React, { VFC } from 'react';
 import { useDarkMode } from '../../lib/useDarkMode';
 
-import { FaMoon } from 'react-icons/fa';
-import { FaSun } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
 const Header: VFC = () => {
   const { isDarkMode, toggle } = useDarkMode();
   return (
