@@ -5,7 +5,7 @@ const Header: VFC = () => {
   return (
     <section>
       <div>
-        <h1 className='text-4xl md:text-6xl mb-4 text-center dark:text-white font-noto1'>
+        <h1 className='text-4xl md:text-6xl mb-2 md:mb-4 text-center dark:text-white font-noto1'>
           <Link href='/'>
             <a>Sansai's blog</a>
           </Link>
