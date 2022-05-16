@@ -3,7 +3,6 @@ import React, { VFC } from 'react';
 import { useDarkMode } from '../../lib/useDarkMode';
 
 const Header: VFC = () => {
-  const { isDarkMode, toggle } = useDarkMode();
   return (
     <section>
       <div>
