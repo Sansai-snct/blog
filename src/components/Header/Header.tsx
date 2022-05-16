@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React, { VFC } from 'react';
-import { useDarkMode } from '../../lib/useDarkMode';
 
 const Header: VFC = () => {
   return (
