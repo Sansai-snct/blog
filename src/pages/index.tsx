@@ -25,7 +25,7 @@ const Home: NextPage<Props> = ({ allPosts }) => {
               <p className='mt-2 font-normal text-center  text-gray-700 dark:text-gray-400'>
                 {post.date}
               </p>
-              <div key={post.slug} className='block text-center '>
+              <div className='block text-center '>
                 <a
                   href={post.slug}
                   className='inline-flex items-center  mt-4 py-2 px-3 text-sm font-medium  text-white bg-blue-700 rounded-lg w-32 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
