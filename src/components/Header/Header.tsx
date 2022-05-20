@@ -7,7 +7,7 @@ const Header: VFC = () => {
       <div>
         <h1 className='text-4xl md:text-6xl mb-2 md:mb-4 text-center dark:text-white font-noto1'>
           <Link href='/'>
-            <a>Sansai's blog</a>
+            <a>Sansai&apos;s blog</a>
           </Link>
         </h1>
       </div>
