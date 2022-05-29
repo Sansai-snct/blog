@@ -22,9 +22,9 @@ const Home: NextPage<Props> = ({ allPosts }) => {
               key={post.slug}
               className='p-6  h-48 bg-white mb-4 md:mb-0 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700'
             >
-              <h5 className='mt-4 text-xl text-center font-bold tracking-tight text-gray-900 dark:text-white'>
+              <p className='mt-4 text-xl text-center font-bold tracking-tight text-gray-900 dark:text-white'>
                 {post.title}
-              </h5>
+              </p>
               <p className='mt-2 font-normal text-center  text-gray-700 dark:text-gray-400'>
                 {post.date}
               </p>
